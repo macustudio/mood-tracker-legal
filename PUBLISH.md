@@ -11,16 +11,24 @@ When you're ready (after logging in to GitHub), do this:
 
 ## 2. Upload these files
 
-**Option A — Drag & drop (easiest)**
+From the repo root, sync canonical legal HTML first:
+
+```bash
+npm run legal:sync
+npm run check:store
+```
+
+**Option A - Drag & drop (easiest)**
 
 1. On the new repo page, click **"uploading an existing file"**
-2. Drag the 4 files from this folder into the browser:
+2. Drag these files from this folder into the browser:
    - `index.html`
    - `privacy-policy.html`
    - `terms-of-service.html`
+   - `delete-account.html`
 3. Click **Commit changes**
 
-**Option B — Git**
+**Option B - Git**
 
 ```bash
 cd /path/to/FirstApp/mood-tracker-legal
@@ -46,6 +54,9 @@ git push -u origin main
 
 - **Terms:**  
   `https://YOUR_USERNAME.github.io/mood-tracker-legal/terms-of-service.html`
+
+- **Delete account (Google Play):**  
+  `https://YOUR_USERNAME.github.io/mood-tracker-legal/delete-account.html`
 
 - **Root (redirects to Privacy):**  
   `https://YOUR_USERNAME.github.io/mood-tracker-legal/`
